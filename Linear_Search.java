@@ -1,9 +1,9 @@
 import java.util.*;
 public class Main
 {
-    static int linear(int a[] , int el)
+    static int linear(int a[] , int el , int n)
     {
-        for(int i =0 ;i < 5; i++)
+        for(int i =0 ;i < n; i++)
         {
             if(el == a[i])
                 return i;
@@ -12,14 +12,15 @@ public class Main
     }
 	public static void main(String[] args) {
 	    Scanner sc = new Scanner(System.in);
-	    int []a = new int[5];
-	    for ( int i = 0; i < 5 ; i++ )
+	    int n = sc.nextInt();
+	    int []a = new int[n];
+	    for ( int i = 0; i < n ; i++ )
 	    {
 	        a[i] = sc.nextInt();
 	    }
 	    System.out.println("enter el to be search");
 	    int el = sc.nextInt();
-	    int x = linear(a,el);
+	    int x = linear(a,el,n);
 	    if(x == -1 )
 	        System.out.println("element not found");
 	    else
