@@ -1,3 +1,4 @@
+//Time complexity is O(n)
 import java.util.*;
 public class Main
 {
